@@ -1,0 +1,28 @@
+body{
+    width: 100%;
+    margin: 0;
+}
+
+.game-field{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: stretch;
+    
+}
+
+.game-field_cell{
+    background-image: url(../img/game-field_cell.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.goblin{
+    background-image: url(../img/goblin.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
