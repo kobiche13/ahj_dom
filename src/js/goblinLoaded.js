@@ -1,10 +1,12 @@
+import createGameField from './gameField'
 let gameFieldCells;
 let lastCellNumber;
 
 export default function gameGoblin(){
+  createGameField()
   setInterval(() => {
-    const checkGoblin = document.querySelector('.goblin');//проверка есть ли гоблин
-    if (checkGoblin !== null) {//если гоблин есть - удалить
+    const checkGoblin = document.querySelector('.goblin');
+    if (checkGoblin !== null) {
       checkGoblin.classList.remove('goblin');
     }
     gameFieldCells = Array.from(document.querySelectorAll('.game-field_cell'));

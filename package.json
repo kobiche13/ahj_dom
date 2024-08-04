@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve",
+    "start": "webpack serve --mode development",
     "lint": "eslint .",
     "build": "webpack --mode production",
     "test": "jest"
@@ -25,6 +25,7 @@
     "html-loader": "^5.0.0",
     "html-webpack-plugin": "^5.6.0",
     "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "mini-css-extract-plugin": "^2.9.0",
     "style-loader": "^4.0.0",
     "url-loader": "^4.1.1",
@@ -34,5 +35,8 @@
   },
   "dependencies": {
     "core-js": "^3.31.1"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
   }
 }
