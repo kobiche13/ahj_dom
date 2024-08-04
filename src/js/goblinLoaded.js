@@ -1,9 +1,10 @@
-import createGameField from './gameField'
+import createGameField from './gameField';
+
 let gameFieldCells;
 let lastCellNumber;
 
-export default function gameGoblin(){
-  createGameField()
+export default function gameGoblin() {
+  createGameField();
   setInterval(() => {
     const checkGoblin = document.querySelector('.goblin');
     if (checkGoblin !== null) {
@@ -16,5 +17,5 @@ export default function gameGoblin(){
     }
     gameFieldCells[randomCellNumber].classList.add('goblin');
     lastCellNumber = randomCellNumber;
-  }, 1000)
+  }, 1000);
 }

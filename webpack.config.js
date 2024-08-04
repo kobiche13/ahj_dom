@@ -27,11 +27,11 @@ module.exports = {
       {
         test: /\.(png|jpg|gif)$/i,
         type: 'asset/resource',
-        
+
       },
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader,'css-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
 
     ],
